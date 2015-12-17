@@ -1,0 +1,48 @@
+<Template name="treeTextNew">
+
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <div class="card">
+        <br>
+        <form class="col s12 m12 l12">
+          <div class="row">
+            <div class="input-field col s12 m8 l6 teal-text text-lighten-1">
+              <input id="tree" type="text">
+              <label class="blue-text text-darken-4">Tree</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class = "col offset-s1 offset-m1 offset l1">
+              <input type="checkbox" id="publish" />
+              <label for="publish" class="blue-text text-darken-4">Publish</label>
+            </div>
+          </div>
+          <div class="card-action">
+            <a class="left" data-action="showTrees">View Current Trees</a>
+            <a class="waves-effect waves-light btn right" data-action="submit"><i class="material-icons right">send</i>Submit</a>
+            <br>
+          </div>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  {{#if showTrees}}
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card">
+          <div class="card-content blue-text">
+            <span class="card-title blue-text">Current Trees</span>
+            <ul class="black-text">
+              {{#each tree}}
+                <li>{{name}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
+</Template>

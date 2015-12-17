@@ -1,0 +1,25 @@
+<Template name="rightSidePanel">
+  <div class="template-rightSidePanel">
+
+
+      <!-- <ul class="topRight hide-on-med-and-down">
+        <li>
+          <a>Tree1</a>
+        </li>
+        <li>
+          <a class="btn-flat waves-effect blue darken-4 white-text">Tree2</a>
+        </li>
+      </ul> -->
+    {{#if isActiveRoute regex='dashboard' }}
+      <div class="hide-on-med-and-down">
+        <a class="topRight btn-flat waves-effect blue darken-4 white-text">{{truncate tree1 12}}</a>
+        <a class="topRight btn-flat waves-effect blue darken-4 white-text">{{truncate "tree2" 12}}</a>
+        <a class="topRight btn-flat waves-effect blue darken-4 white-text">{{truncate "tree3" 12}}</a>
+        <a class="topRight btn-flat waves-effect blue darken-4 white-text">{{truncate "tree4" 12}}</a>
+        <a class="topRight btn-flat waves-effect blue darken-4 white-text">{{truncate "tree5asl;khlaksdfjwlk" 12}}</a>
+      </div>
+    {{/if}}
+
+
+  </div>
+</Template>

@@ -1,0 +1,38 @@
+.loading {
+  padding-top: 100px;
+}
+
+nav {
+  margin-bottom: 24px;
+  background-color: #0d47a1;
+}
+
+ul.side-nav li a {
+  line-height: 44px;
+  padding: 24px;
+  display: block;
+}
+
+ul.side-nav li {
+  float: none;
+}
+
+footer.page-footer {
+  background-color: #0d47a1;
+}
+
+.container {
+  width: 70%;
+}
+
+.black a {
+  color: black;
+}
+
+.tabs .tab a {
+    color: #fff;
+  }
+
+.card .makePicL1 {
+  width: 8.333%;
+}

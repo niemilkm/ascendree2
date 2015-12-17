@@ -1,0 +1,19 @@
+<template name="appLayout">
+  <!--[if lt IE 9]>
+    <p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
+  <![endif]-->
+  <div class="outsideContainer">
+    {{> Template.dynamic template=header}}
+    
+
+    {{> Template.dynamic template=rightSide}}
+    {{> Template.dynamic template=leftSide}}
+
+    <div class="container">
+      {{> Template.dynamic template=main}}
+    </div>
+
+    {{> Template.dynamic template=footer}}
+
+  </div>
+</template>

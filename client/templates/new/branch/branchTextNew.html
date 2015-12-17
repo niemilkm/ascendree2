@@ -1,0 +1,71 @@
+<Template name="branchTextNew">
+
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <div class="card">
+        <br>
+        <form class="col s12 m12 l12">
+          {{#if Template.subscriptionsReady}}
+            <div class="row">
+              <div class="input-field col s12 m6 l6 teal-text text-lighten-1" id="treesID">
+                <select>
+                  <option value="" disabled selected>Choose a Tree</option>
+                  {{#each trees}}
+                    <option value="1">{{name}}</option>
+                  {{/each}}
+                </select>
+                <label class="blue-text text-darken-4">Tree</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6 l6 teal-text text-lighten-1" id="newBranch">
+                <select>
+                  <option value="1">New Branch</option>
+                  <option value="2">Branch2</option>
+                  <option value="3">Branch3</option>
+                  <option value="4">Branch4</option>
+                  <option value="5">Branch5</option>
+                </select>
+                <label class="blue-text text-darken-4">Top Branch</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+                <textarea id="branchName" class="materialize-textarea"></textarea>
+                <label for="branchName" class="blue-text text-darken-4">{{newBranchLabel}}</label>
+              </div>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn right" data-action="submit"><i class="material-icons right">send</i>Submit</a>
+              <br>
+            </div>
+            {{runUpdateSelect}}
+          {{/if}}
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  {{#if showBranches}}
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card">
+          <div class="card-content blue-text">
+            <!--<span class="card-title blue-text">Current Branches under {{tree}}</span>-->
+            <ul class="black-text">
+              <!-- {{#each branch}}
+                <li>{{name}}</li>
+                <ul>
+                  {{#each subBranch}}
+                    <li>name</li>
+                  {{/each}}
+              {{/each}} -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
+</Template>

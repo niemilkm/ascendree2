@@ -1,0 +1,50 @@
+<template name="_header">
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a class="brand-logo" href="\"> Ascendree</a>
+
+        <!-- <ul class="right">
+          <li><a class="dropdown-button" href="#!" data-activates="user-dropdown"><i class="mdi-navigation-more-vert"></i></a></li>
+        </ul> -->
+
+        <ul class="right hide-on-med-and-down">
+          <li class="{{ isActiveRoute regex='home' }}"><a href="\" title="Home"><i class="mdi-action-home"></i></a></li>
+          {{#if currentUser}}
+            <!-- <li class="{{ isActiveRoute regex='logout' }}"><a href="{{ pathFor 'atSignOut' }}" title="logout">Sign Out</a></li> -->
+            <li class="{{ isActiveRoute regex='dashboard' }}"><a href="\dashboard" title="Dashboard"><i class="mdi-action-dashboard"></i></a></li>
+            <li><a href="\settings"><i class="material-icons">settings</i></a></li>
+            <li><a href="\subscribe"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#" data-action="logout">Sign Out</a></li>
+          {{else}}
+            <li><a href="\sign-in">Sign in</a></li>
+            <li><a href="\sign-up">Register</a></li>
+          {{/if}}
+        </ul>
+
+        <!-- <ul id="user-dropdown" class="dropdown-content">
+          {{#if currentUser}}
+            <li><a href="#" data-action="logout"><i class="mdi-action-lock"></i> Sign Out</a></li>
+          {{else}}
+            <li><a href="{{ pathFor 'atSignIn' }}">Sign in</a></li>
+            <li><a href="{{ pathFor 'atSignUp' }}">Register</a></li>
+          {{/if}}
+        </ul> -->
+
+        <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <ul id="nav-mobile" class="side-nav">
+    <li class="bold {{ isActiveRoute regex='home' }}"><a href="\" title="Home"><i class="mdi-action-home"></i> Home</a></li>
+    <li class="bold {{ isActiveRoute regex='dashboard' }}"><a href="\dashboard" title="Dashboard"><i class="mdi-action-dashboard"></i> Dashboard</a></li>
+    {{#if currentUser}}
+      <li><a href="#" data-action="logout"><i class="mdi-action-lock"></i> Sign Out</a></li>
+    {{else}}
+      <li><a href="\atSignIn">Sign in</a></li>
+      <li><a href="/atSignUp">Register</a></li>
+    {{/if}}
+  </ul>
+
+</template>

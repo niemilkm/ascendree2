@@ -1,0 +1,34 @@
+/*.template-leftSidePanel {*/
+.computer {
+
+  position: relative;
+  clear: both;
+  padding: 7px;
+  width: 14%;
+  height: 100%;
+  margin-top: 100px;
+  pointer-events: auto;
+  background-color: #eceff1;
+  float: left;
+}
+
+.sideText {
+  width:100%;
+  float: left;
+}
+
+.template-leftSidePanel ul li a {
+  color: #000;
+}
+
+
+/*.template-leftSidePanel {
+
+  position: fixed;
+  padding: 10px;
+  margin-top: 50px;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
+  background-color: #fff
+}*/

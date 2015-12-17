@@ -1,0 +1,16 @@
+<Template name="leftSidePanel">
+  {{#if isActiveRoute regex='dashboard' }}
+    <div class="template-leftSidePanel">
+
+      <div class="hide-on-med-and-down computer">
+        <div class="sideText">
+          <div class="grey-text">
+            <h5>Filter</h5>
+          </div>
+          {{> filterOptions}}
+        </div>
+      </div>
+
+    </div>
+  {{/if}}
+</Template>

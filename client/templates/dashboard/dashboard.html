@@ -1,0 +1,31 @@
+<template name="dashboard">
+  <div class="template-dashboard">
+    <div class="hide-on-med-and-down">
+      <a class="btn-floating btn-large waves-effect waves-light red right" href="\new"><i class="mdi-content-add"></i></a>
+      <!-- <a class="btn-floating btn-large waves-effect waves-light red right"><i class="fa-filter"></i></a> -->
+      <h1>Dashboard</h1>
+    </div>
+    <div class="hide-on-large-only">
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large waves-effect waves-light red right" href="leaf.text.new"><i class="mdi-content-add"></i></a>
+      </div>
+      <h3>Dashboard</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="black">
+      <a name="modalTest" class="modal-trigger" href="#modal1">
+        {{> leafTextItem}}
+      </a>
+    </div>
+
+      {{> leafTextItem}}
+      {{> leafTextItem}}
+      {{> leafTextItem}}
+      {{> leafTextItem}}
+
+    </div>
+    {{> leafTextModal}}
+  </div>
+</template>

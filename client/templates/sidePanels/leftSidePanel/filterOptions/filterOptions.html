@@ -1,0 +1,87 @@
+<Template name="filterOptions">
+
+  <form>
+    <ul>
+      {{#if filterTree}}
+        <li><a name="filterTree" href="#"><i class="fa fa-angle-right"></i> Tree</a></li>
+      {{else}}
+        <li><a name="filterTree" href="#"><i class="fa fa-angle-down"></i> Tree</a></li>
+        <div class="row">
+          <div class="col offset-l1">
+            <ul>
+              <li><input type="checkbox" id="Tree1" />
+              <label class="black-text" for="Tree1"> Tree1</label></li>
+              <li><input type="checkbox" id="Tree2" />
+              <label class="black-text" for="Tree2"> Tree2</label></li>
+              <li><input type="checkbox" id="Tree3" />
+              <label class="black-text" for="Tree3"> Tree3</label></li>
+              <li><input type="checkbox" id="Tree4" />
+              <label class="black-text" for="Tree4"> Tree4</label></li>
+            </ul>
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if filterBranch1}}
+        <li><a name="filterBranch1" href="#"><i class="fa fa-angle-right"></i> Branch1</a></li>
+      {{else}}
+        <li><a name="filterBranch1" href="#"><i class="fa fa-angle-down"></i> Branch1</a></li>
+        <div class="row">
+          <div class="col offset-l1">
+            <ul>
+              <li><input type="checkbox" id="Branch1" />
+              <label class="black-text" for="Branch1"> Branch1</label></li>
+              <li><input type="checkbox" id="Branch2" />
+              <label class="black-text" for="Branch2"> Branch2</label></li>
+              <li><input type="checkbox" id="Branch3" />
+              <label class="black-text" for="Branch3"> Branch3</label></li>
+              <li><input type="checkbox" id="Branch4" />
+              <label class="black-text" for="Branch4"> Branch4</label></li>
+            </ul>
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if filterBranch2}}
+        <li><a name="filterBranch2" href="#"><i class="fa fa-angle-right"></i> Branch2</a></li>
+      {{else}}
+        <li><a name="filterBranch2" href="#"><i class="fa fa-angle-down"></i> Branch2</a></li>
+        <div class="row">
+          <div class="col offset-l1">
+            <ul>
+              <li><input type="checkbox" id="SubBranch1" />
+              <label class="black-text" for="SubBranch1"> SubBranch1</label></li>
+              <li><input type="checkbox" id="SubBranch2" />
+              <label class="black-text" for="SubBranch2"> SubBranch2</label></li>
+              <li><input type="checkbox" id="SubBranch3" />
+              <label class="black-text" for="SubBranch3"> SubBranch3</label></li>
+              <li><input type="checkbox" id="SubBranch4" />
+              <label class="black-text" for="SubBranch4"> SubBranch4</label></li>
+            </ul>
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if filterDateAfter}}
+        <li><a name="filterDateAfter" href="#"><i class="fa fa-angle-right"></i> Date</a></li>
+      {{else}}
+        <li><a name="filterDateAfter" href="#"><i class="fa fa-angle-down"></i> Date</a></li>
+        <div class="row">
+          <div class="col offset-l1">
+            <label for="dateAfter">After This Date</label>
+            <input name="dateAfter" id="dateAfter" type="date" class="datepicker">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col offset-l1">
+            <label for="dateBefore">Before This Date</label>
+            <input name="dateBefore" id="dateBefore" type="date" class="datepicker">
+          </div>
+        </div>
+      {{/if}}
+
+
+    </ul>
+  </form>
+
+</Template>
